@@ -54,4 +54,4 @@ useEffect(()=>{
         </div>
     )
 }
-export default Card1
+export default Card1 
