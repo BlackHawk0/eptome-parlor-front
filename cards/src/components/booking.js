@@ -5,7 +5,7 @@ import Axios from "axios"
 function NewPost() {
 
     // const [addText, setAddText] = useState('')
-    const url = 'https://lit-depths-86097.herokuapp.com/blogs'
+    const url = 'https://eptome-parlor.herokuapp.com/booking#'
     const [data, setData] = useState({
         name: ' ',
         email: ' ',
@@ -27,7 +27,7 @@ function NewPost() {
 
         
         Axios.post(url, {
-          name: data.customer,
+          name: data.customer_name,
           email : data.customer_email,
           tel : data.customer_phonenumber,
           date: data.booked_date,
@@ -44,14 +44,13 @@ function NewPost() {
             <h3>New Posts</h3>
             <br />
             <form  onSubmit={(e)=>addDataForm(e)}>
-                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.title} required name="title" placeholder="title" />
-                
-                <p className="label">Content</p>
-                <input onChange={(e)=>handle(e)} type='text' id="content" value={data.content} required name="content" placeholder="enter your content"/>
-                
-                <p className="label">Author</p>
-                
-                <input onChange={(e)=>handle(e)} type='text' id="author" value={data.author} required name="author" placeholder=" ~anonymous"/>
+                <input type/>
+                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.customer_name} required name="title" placeholder="title" />
+                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='email' id="title" value={data.customer_email} required name="title" placeholder="title" />
+                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='tel' id="title" value={data.customer_phonenumber} required name="title" placeholder="title" />
+                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='date' id="title" value={data.booked_date} required name="title" placeholder="title" />
+                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.service_id} required name="title" placeholder="title" />
+               
                 
                 <input onChange={(e)=>handle(e)} type='submit'  className="submit"/>
             </form>
