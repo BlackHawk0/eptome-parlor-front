@@ -6,8 +6,6 @@ import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
-// import InfoIcon from '@material-ui/icons/Info';
-// import itemData from './itemData';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,23 +24,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const itemData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 export default function TitlebarImageList() {
   const [serviceTypes, setServiceType] = useState([]);
 

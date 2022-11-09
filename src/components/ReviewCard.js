@@ -15,9 +15,12 @@ export default function ReviewCard({ review:{name, body }}) {
 
     return(
         <div className="card">
-      <h3>My Name is {name}</h3>
-      <p>{body}</p>
-      <button onClick={liked} className={[likeActive ? 'activated-heart': null, 'btn'].join(' ')} >Like &#x2661;</button>
+            <h3>My Name is {name}</h3>
+            <p>{body}</p>
+            <div className="upvotes">
+            <button onClick={liked} className={[likeActive ? 'activated-heart': null, 'btn'].join(' ')} > &#x21E7;</button> <br />
+            {/* <button onClick={liked} className={[likeActive ? 'activated-heart': null, 'btn'].join(' ')} > &#x21E9;</button> */}
+            </div>
         </div>
     )
 }

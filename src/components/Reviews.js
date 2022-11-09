@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReviewForm from "./ReviewForm";
 import ReviewCard from "./ReviewCard"
+import './Reviews.css'
 
 export default function Reviews() {
 
@@ -20,6 +21,7 @@ export default function Reviews() {
 
     return (
         <div className="reviews">
+            <br /><br />
             <h2>Our Customers Say...</h2>
             {reviews.map((review) => (
 					<ReviewCard key={review.id} review={review} />))}
