@@ -13,9 +13,12 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import { NavLink } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Services', 'Contact Us'];
+// const navItems = ['Home', 'About', 'Services', 'Contact Us'];
+const navItems = [<NavLink to="/">Home</NavLink>, <NavLink to="/about">About</NavLink>, <NavLink to="/services">Services</NavLink>, <NavLink to="/contactpage">Contact Us</NavLink>];
+
 
 export default function DrawerAppBar(props) {
   const { window } = props;
