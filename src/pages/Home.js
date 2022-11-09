@@ -103,27 +103,6 @@ const Home = () => {
         backgroundColor ="#D9D9D9"
         pt = "3rem" 
          >
-        <Grid item xs={3}>
-            <img src={rectangle} alt="facial"/>
-            <Typography>Infrared Sauna</Typography>
-            <Typography>Kes 20,000</Typography>
-
-        </Grid>
-        <Grid item xs={3}>
-        <img src={rectangle} alt="facial"/>
-            <Typography>LED Facial</Typography>
-            <Typography>Kes 6,000</Typography>
-        </Grid>
-        <Grid item xs={3}>
-        <img src={rectangle} alt="facial"/>
-            <Typography>Anti-Aging Facial</Typography>
-            <Typography>Kes 10,000</Typography>
-        </Grid>
-        <Grid item xs={3}>
-            <img src={rectangle} alt="facial"/>
-            <Typography>Oxygen Facial</Typography>
-            <Typography>Kes 7,000</Typography>
-        </Grid>
         <Grid sx={{width: "100%", display: "flex", justifyContent: "center", pt: "2rem", pb: "2rem"}}>  
           <Button
           sx={{
