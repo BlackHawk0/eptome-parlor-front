@@ -3,7 +3,7 @@ import './card1.css'
 
 
 function Card1() {
-    const urlPath = 'http://localhost:5000/reviews'
+    const urlPath = 'https://eptome-parlor.herokuapp.com/testimonials'
 
     const [data, setData] = useState([])
 
@@ -34,16 +34,16 @@ useEffect(()=>{
 
              {data.map((reviews)=>( 
                 <span key={reviews.id} className='card'>
-                    <div className='image'><img src={reviews.imageurl} alt={reviews.name} /></div>
+                    <div className='image'><img src={reviews.imageURL} alt={reviews.name} /></div>
                     <div classname='words'>
                        <div className='nameRating'>
                        <h3>{reviews.name}</h3>
-                        <h4 className='rating'>{reviews.rating}</h4>
+                        <h4 className='rating'>rating: {reviews.rating} of 5</h4>
                         
                     </div> 
                     <hr />
-                <h3 className='title'>{reviews.title}</h3>
-                <em className='content'> ~ {reviews.content}</em>
+
+                <em className='content'> ~ {reviews.message}</em>
                 
                 </div>
                 </span>

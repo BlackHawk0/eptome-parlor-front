@@ -1,0 +1,44 @@
+/* .main{
+    display: grid;
+
+}*/
+.maindiv{
+ display: grid;
+ grid-template-columns: auto auto auto;
+ padding-left: 0%;
+ padding-right: 0%;
+ text-align: center;
+ min-width: fit-content;
+} 
+.card{
+   background-color: aqua;
+   margin: 2vw;
+   margin-right: 0%;
+   margin-left: 10%;
+   padding: 1vw;
+   box-shadow: 0.1vw 0.1vw 0.1em black;
+   border-radius: 5%;
+   display: flex;
+   width: 70%;
+   height: fit-content;
+   padding-right: 0.2vw;
+}
+/* #right, #left{
+    font-size: 4vw;
+    font-weight: 700;
+    color: brown;
+    display: inline-block;
+} */
+.nameRating{
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    border-width: 0.5vw;
+    border-color: black;
+}
+img{
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+}
