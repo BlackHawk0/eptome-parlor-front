@@ -17,7 +17,7 @@ import { NavLink } from "react-router-dom";
 
 const drawerWidth = 240;
 // const navItems = ['Home', 'About', 'Services', 'Contact Us'];
-const navItems = [<NavLink to="/">Home</NavLink>, <NavLink to="/services">Services</NavLink>, <NavLink to="/contactpage">Contact Us</NavLink>];
+const navItems = [<NavLink to="/">Home</NavLink>, <NavLink to="/about">About</NavLink>, <NavLink to="/services">Services</NavLink>, <NavLink to="/contactpage">Contact Us</NavLink>];
 
 
 export default function DrawerAppBar(props) {
