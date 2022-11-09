@@ -16,7 +16,9 @@ letter-spacing: 0.05em;
 
 color: #B58152;
 }
-
+.services-page{
+    margin-left: 9%;
+}
 .service-p {
 width: 90%;
 height: 83.73px;
@@ -72,11 +74,12 @@ letter-spacing: 0.05em;
 
 color: #B58152;
 }
-.offers-img img{
-width: 50%;
+.offers-img{
+width: 10%;
 height: 50%;
 /* left: 92.64px; */
-top: 2135.72px;
+/* top: 2135.72px; */
+margin-top: 10%;
 
 }
 .reviews-div {
