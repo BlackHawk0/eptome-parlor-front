@@ -42,3 +42,23 @@ img{
     width: 3vw;
     height: 3vw;
 }
+form{
+display: grid;
+grid-template-columns: auto auto;
+padding-left: 7%;
+padding-right: 7%;
+text-align: center;
+background-color: black;
+padding-bottom: 2vw;
+}
+input, option, select{
+    width: 70%;
+    border: none;
+    border-bottom-width: 0.1vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    height: 1.5vw;
+}
+/* form{
+    width: 80%;
+} */

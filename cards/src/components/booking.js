@@ -55,23 +55,24 @@ useEffect(()=>{
 
     return(
         <div className="div">
-            <h3>New Posts</h3>
+            <h3>Book a Date</h3>
             <br />
             <form  onSubmit={(e)=>addDataForm(e)}>
-                <input type/>
-                <p className="label">Name</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.customer_name} required name="title" placeholder="title" />
-                <p className="label">Email</p><input onChange={(e)=>handle(e)} type='email' id="title" value={data.customer_email} required name="title" placeholder="title" />
-                <p className="label">Tel</p><input onChange={(e)=>handle(e)} type='tel' id="title" value={data.customer_phonenumber} required name="title" placeholder="title" />
-                <p className="label">Date</p><input onChange={(e)=>handle(e)} type='date' id="title" value={data.booked_date} required name="title" placeholder="title" />
-                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.service_id} required name="title" placeholder="title" />
+            {/* <div className="div"> */}
+      
+               <span><p className="label">Name</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.customer_name} required name="title" placeholder="title" /></span> 
+               <span><p className="label">Email</p><input onChange={(e)=>handle(e)} type='email' id="title" value={data.customer_email} required name="title" placeholder="title" /></span> 
+               <span><p className="label">Tel</p><input onChange={(e)=>handle(e)} type='tel' id="title" value={data.customer_phonenumber} required name="title" placeholder="title" /></span>
+               <span><p className="label">Date</p><input onChange={(e)=>handle(e)} type='date' id="title" value={data.booked_date} required name="title" placeholder="title" /></span>
+               <span><p className="label">Service</p>
                <select>
                {service.map((service)=>( 
                 
                   <option key={service.id}>{service.service_name}</option>
             ))} 
-               </select>
-                
-                <input onChange={(e)=>handle(e)} type='submit'  className="submit"/>
+               </select></span> 
+                {/* </div> */}
+               <span><input onChange={(e)=>handle(e)} type='submit'  className="submit"/></span> 
             </form>
         </div>
     )
