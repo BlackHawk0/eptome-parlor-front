@@ -18,7 +18,7 @@ import FooterLogo from '../assets/13.png'
 
 
 export const StyledFooterLink = styled(Link)({
-    color: "#000000",
+    color: "#ffffff",
     fontSize: "1rem",
     textDecoration: "none",
     "&:hover": {
@@ -33,21 +33,24 @@ export const StyledFooterLink = styled(Link)({
     },
   });
   const StyledFooterLinkNoBold = styled(Link)({
-    color: "black",
+    color: '#ffffff',
     textDecoration: "none",
     fontWeight: 100,
     "&:hover": {
       fontWeight: "bold",
+      paddingBottom: "0.15rem",
+      borderBottom: "3px solid #ED806B",
     //   color: "#009966",
     },
     "&:focus": {
       fontWeight: "bold",
-    //   color: "#009966",
+      paddingBottom: "0.15rem",
+      borderBottom: "3px solid #ED806B",
     },
   });
 
 
-const lightTheme = createTheme({ palette: { mode: "light" } });
+// const lightTheme = createTheme({ palette: { mode: "light" } });
 
 export default function Footer() {
   return (
@@ -57,10 +60,12 @@ export default function Footer() {
       fontFamily='font-family: "Rubik", sans-serif'
     >
       <Box
-        paddingX={{ xs: "1rem", lg: ".5rem" }}
+        // paddingX={{ xs: "1rem", lg: ".5rem" }}
         paddingTop={{ xs: "1rem", lg: "3rem" }}
-        paddingBottom={{ xs: "1rem", lg: "0.5rem" }}
-        marginLeft="1rem"
+        // paddingBottom={{ xs: "1rem", lg: "0.5rem" }}
+        // marginLeft="1rem"
+        backgroundColor = '#191919'
+        color = '#ffffff'
       >
         <Grid
           container
@@ -75,7 +80,7 @@ export default function Footer() {
                 target={"_blank"}
               >
                   <img src={FooterLogo} />
-                <Box>However, you like to relax – poolside, with a massage,< br /> 
+                <Box color = '#ffffff'>However, you like to relax – poolside, with a massage,< br /> 
                 manicure or hair styling session, or by sweating it out < br />  at the gym – Epitome Beauty Parlour has state-of-the-art < br />amenities  
                     to make your stay as rejuvenating as possible.</Box>
                 <Box marginTop="1rem" marginBottom="0.35rem">
@@ -91,7 +96,7 @@ export default function Footer() {
                     fontSize="large"
                     paddingX={{ sm: "1rem" }}
                     sx={{
-                      color: "#000000",
+                      color: "#ffffff",
                       "&:hover,&:focus": {
                         color: "#ED806B",
                       },
@@ -110,7 +115,7 @@ export default function Footer() {
                     fontSize="large"
                     paddingX={{ sm: "1rem" }}
                     sx={{
-                      color: "#000000",
+                      color: "#ffffff",
                       "&:hover,&:focus": {
                         color: "#ED806B",
                       },
@@ -128,7 +133,7 @@ export default function Footer() {
                     fontSize="large"
                     paddingX={{ sm: "1rem" }}
                     sx={{
-                      color: "#000000",
+                      color: "#ffffff",
                       "&:hover,&:focus": {
                         color: "#ED806B",
                       },
@@ -146,7 +151,7 @@ export default function Footer() {
                     fontSize="large"
                     paddingX={{ sm: "1rem" }}
                     sx={{
-                      color: "#000000",
+                      color: "#ffffff",
                       "&:hover,&:focus": {
                         color: "#ED806B",
                       },
@@ -158,7 +163,7 @@ export default function Footer() {
                     fontSize="large"
                     paddingX={{ sm: "1rem" }}
                     sx={{
-                      color: "#000000",
+                      color: "#ffffff",
                       "&:hover,&:focus": {
                         color: "#ED806B",
                       },
@@ -289,6 +294,7 @@ export default function Footer() {
           container
           columns={{ xs: 3, md: 6, lg: 15, xl: 15 }}
           justify="center"
+          sx={{backgroundColor: '#2D2D2D', color: '#ffffff'}}
         >
       <Grid item xs={6} textAlign={{ md: "left" }}>
         <Box>

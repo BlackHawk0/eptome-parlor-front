@@ -73,9 +73,7 @@ export default function DrawerAppBar(props) {
                   +254716212865
         </a>
         </Grid>
-        </Grid> 
-      
-
+        </Grid>    
         <Toolbar>
           <IconButton
             // color="inherit"
