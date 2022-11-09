@@ -4,6 +4,8 @@ import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
+import { Typography } from '@material-ui/core';
+import './About.css'
 // import StarBorderIcon from '@material-ui/icons/StarBorder';
 // import itemData from './itemData';
 
@@ -19,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageList: {
     flexWrap: 'nowrap',
-    width: 900,
+    width: 850,
     height: 250,
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
@@ -76,6 +78,15 @@ export default function SingleLineImageList() {
   const classes = useStyles();
 
   return (
+    <div className='about-div'>
+      <Typography variant="h4" align='center' sx={{ my: 2 }}>
+      Our Experienced Specialists
+      </Typography>
+      <br /> <br />
+      <Typography variant="body2" align='center' sx={{ my: 2 }}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+      </Typography>
+      <br /> <br />
     <div className={classes.root}>
       <ImageList className={classes.imageList} cols={2.5}>
         {staff.map((item) => (
@@ -96,6 +107,7 @@ export default function SingleLineImageList() {
           </ImageListItem>
         ))}
       </ImageList>
+    </div>
     </div>
   );
 }

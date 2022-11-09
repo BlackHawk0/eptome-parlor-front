@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   imageList: {
-    width: 500,
-    height: 450,
+    width: 700,
+    height: 650,
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
