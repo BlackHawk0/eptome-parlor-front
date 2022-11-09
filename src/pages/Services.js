@@ -2,7 +2,8 @@ import React from 'react';
 import '../components/Services.css';
 import ServiceCard from '../components/ServiceCard'
 // import Navbar from './../components/Navbar'
-import ReviewForm from '../components/ReviewForm'
+// import ReviewForm from '../components/ReviewForm'
+import Reviews from '../components/Reviews'
 
 const Services = () => {
   return (
@@ -23,7 +24,8 @@ const Services = () => {
         </div>
     </div>
     <div className='reviews-div'>
-        <ReviewForm />
+        {/* <ReviewForm /> */}
+        <Reviews />
         <div className='reviews-card'></div>
     </div>
     </div>

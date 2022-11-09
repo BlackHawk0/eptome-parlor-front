@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AddReviewForm from "./AddReviewForm";
+import ReviewForm from "./ReviewForm";
 import ReviewCard from "./ReviewCard"
 
 export default function Reviews() {
@@ -23,7 +23,7 @@ export default function Reviews() {
             <h2>Our Customers Say...</h2>
             {reviews.map((review) => (
 					<ReviewCard key={review.id} review={review} />))}
-            <AddReviewForm handleNewReview={handleNewReview} reviews={reviews}/>   
+            <ReviewForm handleNewReview={handleNewReview} reviews={reviews}/>
         </div>
     );
 }

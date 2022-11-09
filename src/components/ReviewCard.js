@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './ReviewCard.css'
 
 export default function ReviewCard({ review:{name, body }}) {
 
@@ -14,13 +15,6 @@ export default function ReviewCard({ review:{name, body }}) {
 
     return(
         <div className="card">
-      <div className="stars">
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star-half-alt" />
-      </div>
       <h3>My Name is {name}</h3>
       <p>{body}</p>
       <button onClick={liked} className={[likeActive ? 'activated-heart': null, 'btn'].join(' ')} >Like &#x2661;</button>
