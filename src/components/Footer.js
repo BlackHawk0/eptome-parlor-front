@@ -17,7 +17,7 @@ import { styled } from "@mui/material/styles";
 import FooterLogo from '../assets/13.png'
 
 
-const StyledFooterLink = styled(Link)({
+export const StyledFooterLink = styled(Link)({
     color: "#000000",
     fontSize: "1rem",
     textDecoration: "none",
@@ -25,13 +25,11 @@ const StyledFooterLink = styled(Link)({
       fontWeight: "bold",
       paddingBottom: "0.15rem",
       borderBottom: "3px solid #ED806B",
-    //   color: "#009966",
     },
     "&:focus": {
       fontWeight: "bold",
       paddingBottom: "0.15rem",
       borderBottom: "3px solid #ED806B",
-    //   color: "#009966",
     },
   });
   const StyledFooterLinkNoBold = styled(Link)({
