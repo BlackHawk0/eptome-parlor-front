@@ -1,7 +1,6 @@
-/* .main{
-    display: grid;
-
-}*/
+div{
+    font-size: 1.2vw;
+}
 .maindiv{
  display: grid;
  grid-template-columns: auto auto auto;
@@ -11,7 +10,7 @@
  min-width: fit-content;
 } 
 .card{
-   background-color: aqua;
+   background-color: maroon;
    margin: 2vw;
    margin-right: 0%;
    margin-left: 10%;
@@ -39,9 +38,13 @@
 }
 img{
     border-radius: 50%;
-    width: 3vw;
-    height: 3vw;
+    width: 5vw;
+    height: 5vw;
 }
+.h3, .rating{
+    padding: 0.7vw;
+}
+
 form{
 display: grid;
 grid-template-columns: auto auto;
@@ -50,6 +53,7 @@ padding-right: 7%;
 text-align: center;
 background-color: black;
 padding-bottom: 2vw;
+color:white;
 }
 input, option, select{
     width: 70%;
@@ -59,6 +63,22 @@ input, option, select{
     border-bottom-color: white;
     height: 1.5vw;
 }
+.div{
+   background-color: white; 
+}
+.book{
+    color:pink;
+}
 /* form{
     width: 80%;
 } */
+.submit{
+    margin-top: 7vw;
+    width: 20%;
+    height: 3vw;
+    font-weight: 700;
+    font-size: 1.3vw;
+    border-radius: 4%;
+    background-color: rgb(243, 123, 123);
+    color: white;
+}

@@ -55,7 +55,7 @@ useEffect(()=>{
 
     return(
         <div className="div">
-            <h3>Book a Date</h3>
+            <h3 className="book">Book a Date</h3>
             <br />
             <form  onSubmit={(e)=>addDataForm(e)}>
             {/* <div className="div"> */}

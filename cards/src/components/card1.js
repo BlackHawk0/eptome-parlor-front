@@ -37,8 +37,8 @@ useEffect(()=>{
                     <div className='image'><img src={reviews.imageURL} alt={reviews.name} /></div>
                     <div classname='words'>
                        <div className='nameRating'>
-                       <h3>{reviews.name}</h3>
-                        <h4 className='rating'>rating: {reviews.rating} of 5</h4>
+                       <h3 className='h3'>{reviews.name}</h3>
+                        <h4 className='rating'>rating: {reviews.rating}</h4>
                         
                     </div> 
                     <hr />
