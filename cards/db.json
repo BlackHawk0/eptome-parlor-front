@@ -1,0 +1,32 @@
+{
+    "reviews":[
+        {
+            "id" : 1,
+            "name": "Perry",
+            "imageurl" : "https://i.bandori.party/u/c/art/a/tthumb/1301Maya-Yamato-Happy-VNzmri.png",
+            "title" : "great place",
+            "content" : "I would recommend this spa anytime"
+        },
+        {
+            "id" : 1,
+            "name": "Perry",
+            "imageurl" : "https://i.bandori.party/u/c/art/a/tthumb/1301Maya-Yamato-Happy-VNzmri.png",
+            "title" : "great place",
+            "content" : "I would recommend this spa anytime"
+        },
+        {
+            "id" : 1,
+            "name": "Perry",
+            "imageurl" : "https://i.bandori.party/u/c/art/a/tthumb/1301Maya-Yamato-Happy-VNzmri.png",
+            "title" : "great place",
+            "content" : "I would recommend this spa anytime"
+        },
+        {
+            "id" : 1,
+            "name": "Perry",
+            "imageurl" : "https://i.bandori.party/u/c/art/a/tthumb/1301Maya-Yamato-Happy-VNzmri.png",
+            "title" : "great place",
+            "content" : "I would recommend this spa anytime"
+        }
+    ]
+}
