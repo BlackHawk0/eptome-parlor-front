@@ -1,8 +1,22 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Axios from "axios"
 
 
-function NewPost() {
+function Booking() {
+
+    const urlPath = 'https://eptome-parlor.herokuapp.com/services'
+
+    const [service, setService] = useState([])
+
+   
+useEffect(()=>{
+    fetch(urlPath)
+    .then(res=>res.json())
+    .then(json =>{
+        setService(json)
+    })
+}, [])
+
 
     // const [addText, setAddText] = useState('')
     const url = 'https://eptome-parlor.herokuapp.com/booking#'
@@ -45,16 +59,21 @@ function NewPost() {
             <br />
             <form  onSubmit={(e)=>addDataForm(e)}>
                 <input type/>
-                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.customer_name} required name="title" placeholder="title" />
-                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='email' id="title" value={data.customer_email} required name="title" placeholder="title" />
-                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='tel' id="title" value={data.customer_phonenumber} required name="title" placeholder="title" />
-                <p className="label">Title</p><input onChange={(e)=>handle(e)} type='date' id="title" value={data.booked_date} required name="title" placeholder="title" />
+                <p className="label">Name</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.customer_name} required name="title" placeholder="title" />
+                <p className="label">Email</p><input onChange={(e)=>handle(e)} type='email' id="title" value={data.customer_email} required name="title" placeholder="title" />
+                <p className="label">Tel</p><input onChange={(e)=>handle(e)} type='tel' id="title" value={data.customer_phonenumber} required name="title" placeholder="title" />
+                <p className="label">Date</p><input onChange={(e)=>handle(e)} type='date' id="title" value={data.booked_date} required name="title" placeholder="title" />
                 <p className="label">Title</p><input onChange={(e)=>handle(e)} type='text' id="title" value={data.service_id} required name="title" placeholder="title" />
-               
+               <select>
+               {service.map((service)=>( 
+                
+                  <option key={service.id}>{service.service_name}</option>
+            ))} 
+               </select>
                 
                 <input onChange={(e)=>handle(e)} type='submit'  className="submit"/>
             </form>
         </div>
     )
 }
-export default NewPost
+export default Booking
