@@ -62,14 +62,14 @@ export default function TitlebarImageList() {
     <div className={classes.root}>
       <ImageList rowHeight={180} className={classes.imageList}>
         <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
-          <ListSubheader component="div">December</ListSubheader>
+          <ListSubheader component="div">Our Services</ListSubheader>
         </ImageListItem>
         {serviceTypes.map((serviceType) => (
           <ImageListItem key={serviceType.imageURL}>
             <img src={serviceType.imageURL} alt={serviceType.service_type_name} />
             <ImageListItemBar
               title={serviceType.service_type_name}
-              subtitle={<span>by: {serviceType.service_type_description}</span>}
+              subtitle={<span>Description: {serviceType.service_type_description}</span>}
               actionIcon={
                 <IconButton aria-label={`info about ${serviceType.service_type_name}`} className={classes.icon}>
                   {/* <InfoIcon /> */}
