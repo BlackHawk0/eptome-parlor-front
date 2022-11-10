@@ -6,6 +6,8 @@ import heroine from './../assets/heroine.png'
 import seniorFemale from './../assets/senior-female.png'
 import rectangle from './../assets/Rectangle.svg'
 import { styled } from "@mui/material/styles";
+import TopServices from "../components/TopServices";
+import { Link } from 'react-router-dom'
 
 const containerStyles = styled(Grid)({
   display: "flex",
@@ -103,17 +105,20 @@ const Home = () => {
         backgroundColor ="#D9D9D9"
         pt = "3rem" 
          >
+         <TopServices />
         <Grid sx={{width: "100%", display: "flex", justifyContent: "center", pt: "2rem", pb: "2rem"}}>  
-          <Button
-          sx={{
-            backgroundColor: "#A52A2A",
-            padding: "15px 20px",
-            color: '#ffffff',
-            textAlign: "center", 
-          }}
-        >
-          View More
-          </Button>
+          <Link to='/services'>
+            <Button
+            sx={{
+              backgroundColor: "#A52A2A",
+              padding: "15px 20px",
+              color: '#ffffff',
+              textAlign: "center", 
+            }}
+          >
+            View More
+            </Button>
+          </Link>
           </Grid>
       </Grid>
       <Grid sx={{width: "100%", display: "flex", justifyContent: "center", pt: "2rem", pb: "1rem"}}>
