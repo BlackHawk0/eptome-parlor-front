@@ -4,16 +4,9 @@ import Footer from '../components/Footer'
 import Navbar from './../components/Navbar'
 import heroine from './../assets/heroine.png'
 import seniorFemale from './../assets/senior-female.png'
-import rectangle from './../assets/Rectangle.svg'
-import { styled } from "@mui/material/styles";
 import TopServices from "../components/TopServices";
 import { Link } from 'react-router-dom'
 import Testimonials from '../components/Testimonials'
-
-const containerStyles = styled(Grid)({
-  display: "flex",
-  flexWrap: "wrap",
-})
 
 const Home = () => {
   return (
