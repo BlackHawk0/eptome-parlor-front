@@ -4,7 +4,6 @@ import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
-import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contactpage" element={<Contact />} />
       </Routes>
       
     </div>
