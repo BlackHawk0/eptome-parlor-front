@@ -4,7 +4,7 @@ import Axios from "axios"
 
 function Feedback() {
 
-    const url = 'https://eptome-parlor.herokuapp.com/reviews'
+    const url = 'https://eptome-parlor.herokuapp.com/reviews/new'
     const [data, setData] = useState({
         name: ' ',
         image: ' ',
