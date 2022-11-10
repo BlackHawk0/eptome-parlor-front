@@ -12,11 +12,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import { NavLink } from "react-router-dom";
+import Grid from '@mui/material/Grid';
+import { NavLink } from 'react-router-dom';
+
 
 const drawerWidth = 240;
-// const navItems = ['Home', 'About', 'Services', 'Contact Us'];
 const navItems = [<NavLink to="/">Home</NavLink>, <NavLink to="/about">About</NavLink>, <NavLink to="/services">Services</NavLink>, <NavLink to="/contactpage">Contact Us</NavLink>];
 
 
@@ -30,7 +30,7 @@ export default function DrawerAppBar(props) {
 
   const drawer = (
     
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
       <Typography variant="h6" sx={{ my: 2 }}>
         EPITOME PARLOUR
       </Typography>
@@ -52,29 +52,50 @@ export default function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       
-      <AppBar component="nav">
-      <Button sx={{color: 'black', backgroundColor: '#F9F3F1'}}>Primary</Button>
-
+      <AppBar component="nav" sx = {{backgroundColor: '#fff'}}>
+      <Grid container spacing={3}sx={{color: 'black', backgroundColor: '#F9F3F1', pt : "1rem", pb : "1rem"}}>
+        <Grid item xs={2} sx={{color: "#000000",
+        fontSize: "1rem",
+        textDecoration: "none",
+        "&:hover": {
+          fontWeight: "bold",
+          paddingBottom: "0.15rem",
+          borderBottom: "3px solid #ED806B",
+        },
+          "&:focus": {
+            fontWeight: "bold",
+            paddingBottom: "0.15rem",
+            borderBottom: "3px solid #ED806B",
+          },}}
+         >
+          <a href="mailto: bookings@epitomeparlour.co.ke" sx={{color: "#000000"}}>bookings@epitomeparlour.co.ke</a>
+        </Grid>
+        <Grid item xs={7} >
+        <a variant="body2" href="tel: +254716212865" sx={{color: "#000000"}}>
+                  +254716212865
+        </a>
+        </Grid>
+        </Grid>    
         <Toolbar>
           <IconButton
-            color="inherit"
+            // color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'none' }}}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, color: '#000000', display: { xs: 'none', sm: 'block' }, }}
           >
            EPITOME PARLOUR
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#000000' }}>
                 {item}
               </Button>
             ))}
