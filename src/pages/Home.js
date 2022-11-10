@@ -7,6 +7,8 @@ import seniorFemale from "./../assets/senior-female.png";
 import appointment from "./../assets/appointment.png";
 import { styled } from "@mui/material/styles";
 import AppointmentForm from "../components/AppointmentForm";
+import TopServices from "../components/TopServices";
+import { Link } from "react-router-dom";
 
 const containerStyles = styled(Grid)({
   display: "flex",

@@ -2,15 +2,9 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
-import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import { useFormik, Form, FormikProvider } from "formik";
-import { useDispatch, useSelector } from "react-redux";
 import * as Yup from "yup";
 import { useEffect, useState } from "react";
-import dayjs, { Dayjs } from "dayjs";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 export default function AppointmentForm() {
   // const dispatch = useDispatch();
@@ -67,9 +61,6 @@ export default function AppointmentForm() {
     },
   });
 
-  const [value, setValue] = React.useState(dayjs("2022-04-07"));
-
-  let results;
   const { errors, touched, handleSubmit, getFieldProps, values } = formik;
   useEffect(() => {}, []);
   return (
