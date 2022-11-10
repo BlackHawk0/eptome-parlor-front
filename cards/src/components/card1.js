@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Feedback from './card2';
 import './card1.css'
 
 
@@ -51,6 +52,7 @@ useEffect(()=>{
             ))} 
             </div>
             {/* <span id="right" onClick={scrollRight}>&gt;</span> */}
+                <Feedback />
         </div>
     )
 }

@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import Axios from "axios"
 
 
-function Booking() {
+function Feedback() {
 
     const url = 'https://eptome-parlor.herokuapp.com/reviews'
     const [data, setData] = useState({
@@ -51,4 +51,4 @@ function Booking() {
         </div>
     )
 }
-export default Booking
+export default Feedback
