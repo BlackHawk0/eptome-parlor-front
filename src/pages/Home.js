@@ -8,6 +8,7 @@ import appointment from "./../assets/appointment.png";
 import { styled } from "@mui/material/styles";
 import AppointmentForm from "../components/AppointmentForm";
 import TopServices from "../components/TopServices";
+import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
 
 const containerStyles = styled(Grid)({
@@ -106,34 +107,9 @@ const Home = () => {
         </Grid>
       </Grid>
       {/* View more section */}
-      <Grid
-        container
-        spacing={{ xs: 1, sm: 1, md: 1 }}
-        backgroundColor="#D9D9D9"
-        pt="3rem"
-      >
-        <Grid
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            pt: "2rem",
-            pb: "2rem",
-          }}
-        >
-          <Button
-            sx={{
-              backgroundColor: "#A52A2A",
-              padding: "15px 20px",
-              color: "#ffffff",
-              textAlign: "center",
-            }}
-            href="./services"
-          >
-            View More
-          </Button>
-        </Grid>
-      </Grid>
+
+      <ServiceCard />
+
       <Grid
         sx={{
           width: "100%",
