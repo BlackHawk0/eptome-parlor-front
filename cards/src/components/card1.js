@@ -54,6 +54,6 @@ useEffect(()=>{
             {/* <span id="right" onClick={scrollRight}>&gt;</span> */}
                 <Feedback />
         </div>
-    )
+    ) 
 }
 export default Card1 
