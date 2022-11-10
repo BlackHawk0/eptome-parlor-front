@@ -7,6 +7,8 @@ import seniorFemale from "./../assets/senior-female.png";
 import appointment from "./../assets/appointment.png";
 import { styled } from "@mui/material/styles";
 import AppointmentForm from "../components/AppointmentForm";
+import Reviews from "../components/Reviews";
+
 import TopServices from "../components/TopServices";
 import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
@@ -119,7 +121,8 @@ const Home = () => {
           pb: "2rem",
         }}
       >
-        <h2>Testimonials</h2>
+        {/* <h2>Testimonials</h2> */}
+        <Reviews />
       </Grid>
       <Grid
         sx={{
@@ -145,7 +148,7 @@ const Home = () => {
           </Typography>
           <Typography sx={{ color: "#ffffff", marginBottom: "2rem" }}>
             Please note our team will use the details shared to contact you
-            within 24 hours
+            within 24 hours.
           </Typography>
         </div>
 
