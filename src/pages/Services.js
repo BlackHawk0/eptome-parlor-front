@@ -2,10 +2,12 @@ import React from 'react';
 import '../components/Services.css';
 import ServiceCard from '../components/ServiceCard'
 // import Navbar from './../components/Navbar'
+// import ReviewForm from '../components/ReviewForm'
+import Reviews from '../components/Reviews'
 
 const Services = () => {
   return (
-    <div>
+    <div className='services-page'>
         {/* <Navbar /> */}
         <div>
         <h1 className='heading'>BEAUTY AND SPA CENTER</h1>
@@ -22,9 +24,10 @@ const Services = () => {
         </div>
     </div>
     <div className='reviews-div'>
+        {/* <ReviewForm /> */}
+        <Reviews />
         <div className='reviews-card'></div>
     </div>
-        <img src="https://img.freepik.com/free-photo/beautiful-african-woman-smiling-resting-relaxing-spa-salon_176420-12883.jpg?size=626&ext=jpg&ga=GA1.2.790298598.1667807727&semt=sph" alt="Massage" />
     </div>
   )
 }
