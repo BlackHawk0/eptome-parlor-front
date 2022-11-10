@@ -16,7 +16,9 @@ letter-spacing: 0.05em;
 
 color: #B58152;
 }
-
+.services-page{
+    margin-left: 9%;
+}
 .service-p {
 width: 90%;
 height: 83.73px;
@@ -34,67 +36,57 @@ color: #555555;
 
 .offers-div{
 width: 90%;
-height: 658px;
-/* left: 77px; */
 margin-top: 7%;
 margin-bottom: 7%;
 display: flex;
-
-
+border-radius: .5rem;
 background: #F3F0EB;
 }
 .offers-p{
 width: 90%;
-height: 82.78px;
-/* left: 141.21px; */
-top: 280.53px;
-
 font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 23px;
-
 color: #555555;
 }
+
 .offers-heading{
 width: 90%;
 height: 208.01px;
 left: 132px;
 top: 100px;
-
 font-family: 'Old Standard TT';
 font-style: normal;
 font-weight: 700;
 font-size: 52px;
 line-height: 64px;
 letter-spacing: 0.05em;
-
 color: #B58152;
 }
-.offers-img img{
-width: 50%;
+.offers-img{
+width: 10%;
 height: 50%;
-/* left: 92.64px; */
-top: 2135.72px;
+margin-top: 10%;
 
 }
 .reviews-div {
 width: 90%;
-height: 373px;
+height: 100%;
 /* left: 79px; */
 top: 2725px;
 margin-top: 7%;
 margin-bottom: 7%;
 background: #D9D9D9;
+border-radius: .5rem;
+
 }
 .reviews-card{
 width: 90%;
 height: 321px;
 /* left: 518px; */
 top: 2744px;
-
-/* background: url(8.png); */
 }
 
 .top-services-container {
