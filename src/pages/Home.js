@@ -8,6 +8,7 @@ import rectangle from './../assets/Rectangle.svg'
 import { styled } from "@mui/material/styles";
 import TopServices from "../components/TopServices";
 import { Link } from 'react-router-dom'
+import Testimonials from '../components/Testimonials'
 
 const containerStyles = styled(Grid)({
   display: "flex",
@@ -122,7 +123,12 @@ const Home = () => {
           </Grid>
       </Grid>
       <Grid sx={{width: "100%", display: "flex", justifyContent: "center", pt: "2rem", pb: "1rem"}}>
-          <h2>Testimonials</h2>
+          {/* <h2>Testimonials</h2> <br/> */}
+          <div>
+            <Testimonials />
+          </div>
+          
+
       </Grid>
       <Grid container spacing={{ xs: 1, sm: 1, md: 1 }}
       sx={{width: "100%", display: "flex", pt: "1rem", pb: "2rem", backgroundColor: "#D9D9D9"}}>
