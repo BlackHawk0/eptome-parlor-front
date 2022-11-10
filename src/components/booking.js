@@ -19,7 +19,7 @@ useEffect(()=>{
 
 
     // const [addText, setAddText] = useState('')
-    const url = 'https://eptome-parlor.herokuapp.com/booking#'
+    const url = 'https://eptome-parlor.herokuapp.com/booking/new'
     const [data, setData] = useState({
         name: ' ',
         email: ' ',
