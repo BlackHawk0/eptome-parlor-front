@@ -1,0 +1,22 @@
+.top-services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-service {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.top-service img {
+    width: 100%;
+}
+
+.top-service h3 {
+    text-align: center;
+}
+
+.top-service p {
+    text-align: center;
+}
