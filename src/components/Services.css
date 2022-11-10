@@ -51,6 +51,7 @@ font-size: 16px;
 line-height: 23px;
 color: #555555;
 }
+
 .offers-heading{
 width: 90%;
 height: 208.01px;
@@ -62,7 +63,6 @@ font-weight: 700;
 font-size: 52px;
 line-height: 64px;
 letter-spacing: 0.05em;
-
 color: #B58152;
 }
 .offers-img{
@@ -80,6 +80,7 @@ margin-top: 7%;
 margin-bottom: 7%;
 background: #D9D9D9;
 border-radius: .5rem;
+
 }
 .reviews-card{
 width: 90%;
@@ -87,3 +88,4 @@ height: 321px;
 /* left: 518px; */
 top: 2744px;
 }
+
