@@ -9,6 +9,7 @@ import { styled } from "@mui/material/styles";
 import TopServices from "../components/TopServices";
 import { Link } from 'react-router-dom'
 import '../index.css'
+import AppointmentForm from '../components/AppointmentForm'
 
 const containerStyles = styled(Grid)({
   display: "flex",
@@ -59,20 +60,22 @@ const Home = () => {
                 flexDirection="column"
                 alignItems="flex-start"
               >
-              <Button
-              sx = {{
-                boxShadow: 'none',
-                textTransform: 'none',
-                fontSize: 20,
-                padding: '18px 20px',
-                width: '15rem',
-                border: '1px solid',
-                lineHeight: 2.5,
-                backgroundColor: '#000000',
-                borderColor: '#ffffff',
-                color: '#ffffff',
-              }}
-              >Booking</Button>
+              <Link to='/appointments'>
+                <Button
+                sx = {{
+                  boxShadow: 'none',
+                  textTransform: 'none',
+                  fontSize: 20,
+                  padding: '18px 20px',
+                  width: '15rem',
+                  border: '1px solid',
+                  lineHeight: 2.5,
+                  backgroundColor: '#000000',
+                  borderColor: '#ffffff',
+                  color: '#ffffff',
+                }}
+                >Booking</Button>
+              </Link>
               </Box>
             </Grid>
           </Grid>
@@ -122,8 +125,10 @@ const Home = () => {
           </Link>
           </Grid>
       </Grid>
+      <h2>Book An Appointment</h2>
       <Grid sx={{width: "100%", display: "flex", justifyContent: "center", pt: "2rem", pb: "1rem"}}>
-          <h2>Testimonials</h2>
+          
+          <AppointmentForm/>
       </Grid>
       <Grid container spacing={{ xs: 1, sm: 1, md: 1 }}
       sx={{width: "100%", display: "flex", pt: "1rem", pb: "2rem", backgroundColor: "#D9D9D9"}}>

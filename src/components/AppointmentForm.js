@@ -45,14 +45,14 @@ export default function AppointmentForm() {
       console.log("VALUES: ", values);
       console.log("in here: ", values);
       const postData = async () => {
-        await fetch("https://eptome-parlor.herokuapp.com/bookings/new", {
+        await fetch("https://eptome-parlor-beauty.herokuapp.com/bookings/new", {
           method: "POST",
           body: JSON.stringify({
-            id: 5,
-            customer_name: "Wambura",
-            customer_phonenumber: "1237767890",
-            customer_email: "wam@test.com",
-            booked_date: "",
+              customer_name: values.customer_name,
+              customer_phonenumber: values.customer_phonenumber,
+              customer_email: values.customer_email,
+              booked_service: values.booked_service,
+              booked_date: values.booked_date,
           }),
           headers: { "Content-type": "application/json; charset=UTF-8" },
         });
