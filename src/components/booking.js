@@ -64,16 +64,19 @@ useEffect(()=>{
                <span><p className="label">Email</p><input onChange={(e)=>handle(e)} type='email' id="title" value={data.customer_email} required name="title" placeholder="title" /></span> 
                <span><p className="label">Tel</p><input onChange={(e)=>handle(e)} type='tel' id="title" value={data.customer_phonenumber} required name="title" placeholder="title" /></span>
                <span><p className="label">Date</p><input onChange={(e)=>handle(e)} type='date' id="title" value={data.booked_date} required name="title" placeholder="title" /></span>
-               <span><p className="label">Service</p>
-               <select>
-               {service.map((service)=>( 
-                
-                  <option key={service.id}>{service.service_name}</option>
-            ))} 
-               </select></span> 
+               <span><select onChange={(e)=>handle(e)}><option>{data.service_id}</option></select></span>
+
                 {/* </div> */}
                <span><input onChange={(e)=>handle(e)} type='submit'  className="submit"/></span> 
             </form>
+            <h2 className="label">Service</h2>
+               <div>
+               {service.map((service)=>( 
+                
+                <p key={service.id}>{service.service_name}: {service.id}</p>
+            ))} 
+               </div>
+            
         </div>
     )
 }
