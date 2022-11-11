@@ -8,6 +8,7 @@ import rectangle from './../assets/Rectangle.svg'
 import { styled } from "@mui/material/styles";
 import TopServices from "../components/TopServices";
 import { Link } from 'react-router-dom'
+import '../index.css'
 
 const containerStyles = styled(Grid)({
   display: "flex",
@@ -136,6 +137,14 @@ const Home = () => {
         
         </Grid>
       </Grid>
+      <a
+        href="https://wa.me/254705719678"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
       <Footer />
 
     </div>
