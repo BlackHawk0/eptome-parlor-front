@@ -6,6 +6,7 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import { Typography } from '@material-ui/core';
 import './About.css'
+import '../index.css'
 // import StarBorderIcon from '@material-ui/icons/StarBorder';
 // import itemData from './itemData';
 
@@ -56,24 +57,6 @@ const staff = [
     "title": "Lee"
 }
 ]
-
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const itemData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 export default function SingleLineImageList() {
   const classes = useStyles();
 
@@ -108,6 +91,14 @@ export default function SingleLineImageList() {
         ))}
       </ImageList>
     </div>
+      <a
+        href="https://wa.me/254705719678"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
     </div>
   );
 }
