@@ -1,5 +1,7 @@
 import React from 'react'
 import './contact.css'
+import '../index.css'
+
 
 function Contact() {
     return (
@@ -16,6 +18,14 @@ function Contact() {
                 <button className="btn">Send Message</button>
             </form>
             </div>
+            <a
+            href="https://wa.me/254705719678"
+            class="whatsapp_float"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+            </a>
+
         </div>
     )
 }

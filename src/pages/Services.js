@@ -4,6 +4,7 @@ import ServiceCard from '../components/ServiceCard'
 // import Navbar from './../components/Navbar'
 // import ReviewForm from '../components/ReviewForm'
 import Reviews from '../components/Reviews'
+import '../index.css'
 
 const Services = () => {
   return (
@@ -28,8 +29,16 @@ const Services = () => {
         <Reviews />
         <div className='reviews-card'></div>
     </div>
+      <a
+        href="https://wa.me/254705719678"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
