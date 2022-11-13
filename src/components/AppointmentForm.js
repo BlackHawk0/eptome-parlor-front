@@ -45,6 +45,7 @@ export default function AppointmentForm() {
       console.log("VALUES: ", values);
       console.log("in here: ", values);
       const postData = async () => {
+        // await fetch("https://eptome-parlor-beauty.herokuapp.com/bookings/new", {
         await fetch("https://eptome-parlor-beauty.herokuapp.com/bookings/new", {
           method: "POST",
           body: JSON.stringify({
