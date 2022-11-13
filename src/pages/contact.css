@@ -1,0 +1,53 @@
+.contact-container{
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form{
+    width: 100%;
+    height: 100%;
+    background: #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.input-style{
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 50%;
+    height: 30px;
+    background: #c2c2c2;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

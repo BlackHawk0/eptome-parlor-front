@@ -1,6 +1,36 @@
-# Getting Started with Create React App
+# Epitome Beauty Parlour
+ 
+### This is a description of the Epitome Beauty Parlour project.
+
+[Live Demo Link](https://main--singular-mermaid-870a2f.netlify.app/)
+
+## Table of Content
+
++ [Description](#description)
++ [Installation](#installation)
++ [Technology Used](#technology-used)
++ [Reference](#reference)
++ [Licence](#licence)
++ [Contributors Info](#contributors-info)
+
+## Description
+<p>This is a single-page website application for a beauty parlour that allows users to view the all the services offered, book a service appointment, leave a review and chat directly with the parlour through the Whatsapp chat feature.</p>
+
+[Live Demo Link](https://main--singular-mermaid-870a2f.netlify.app/)
+
+## Installation
+
+### Requirements
+
+* A Computer
+
+* An access to the Internet
+
+### Installation Process
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Clone the repo to your local machine.
 
 ## Available Scripts
 
@@ -43,28 +73,62 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+[Go Back to the top](#epitome-beauty-parlour)
+## Technology Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Reactjs Libraries - were used in developing the front-end.
 
-### Analyzing the Bundle Size
+* Ruby Sinatra - which was used for developing this project's backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* HTML - which was used to build the structure of the pages.
 
-### Making a Progressive Web App
+* CSS - which was used to style and beautify the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Javascript - which was used to add interactivity to the website.
 
-### Advanced Configuration
+* Material UI - which was used for further styling of the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Tailwind CSS - which was used for further styling of the website.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Reference
+* Materialize CSS
 
-### `npm run build` fails to minify
+[Go Back to the top](#epitome-beauty-parlour)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licence
+
+MIT License
+
+Copyright (c) [2022]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+[Go Back to the top](#epitome-beauty-parlour)
+
+## Contributors Info
+
+### [Daniel Wanambuko](https://github.com/BlackHawk0)
+### [Rebecca Kimani](https://github.com/rebykimani)
+### [Mary Wanyama](https://github.com/Mary-Wanyama)
+### [Stephen Kairu](https://github.com/StephenKairu)
+
+
+## [Go Back to the top](#epitome-beauty-parlour)
