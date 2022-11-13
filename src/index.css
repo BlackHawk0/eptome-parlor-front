@@ -11,6 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .whatsapp_float {
     position: fixed;
     width: 60px;

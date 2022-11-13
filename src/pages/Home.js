@@ -127,7 +127,6 @@ const Home = () => {
       </Grid>
       <h2>Book An Appointment</h2>
       <Grid sx={{width: "100%", display: "flex", justifyContent: "center", pt: "2rem", pb: "1rem"}}>
-          
           <AppointmentForm/>
       </Grid>
       <Grid container spacing={{ xs: 1, sm: 1, md: 1 }}

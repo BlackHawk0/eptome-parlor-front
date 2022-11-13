@@ -6,17 +6,19 @@ import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Contact from "./pages/Contact";
 import AppointmentForm from "./components/AppointmentForm";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactpage" element={<Contact />} />
         <Route path="/appointments" element={<AppointmentForm />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       
     </div>
