@@ -14,7 +14,7 @@
 + [Contributors Info](#contributors-info)
 
 ## Description
-<p>This is a single-page website application for a beauty parlour that allows users to view the all the services offered, book a service appointment, leave a review and chat directly with the parlour through the Whatsapp chat feature.</p>
+<p>This is a single-page website application for a beauty parlour that allows users to view all the services offered, book a service appointment, leave a review and chat directly with the parlour through the Whatsapp chat feature.</p>
 
 [Live Demo Link](https://main--singular-mermaid-870a2f.netlify.app/)
 
