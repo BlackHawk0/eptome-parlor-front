@@ -5,7 +5,7 @@ import Bookings from './Bookings';
 const Booking = () => {
     const [bookings, setBookings] = useState([])
     useEffect(()=>{
-        fetch('https://eptome-parlor.herokuapp.com/bookings')
+        fetch('https://eptome-parlor-o1.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => setBookings(data))
     }, [])
@@ -13,7 +13,7 @@ const Booking = () => {
     const update = (id, data) =>{
       console.log('data arrived');
       console.log(data);
-      fetch(`https://eptome-parlor.herokuapp.com/bookings/${id}`, 
+      fetch(`https://eptome-parlor-o1.herokuapp.com/bookings/${id}`, 
       {
         method: 'PATCH',
         headers:{
@@ -31,7 +31,7 @@ const Booking = () => {
       .then(data => setBookings(data))
     }
     const onDelete =(id) =>{
-      fetch(`https://eptome-parlor.herokuapp.com/bookings/${id}`, 
+      fetch(`https://eptome-parlor-o1.herokuapp.com/bookings/${id}`, 
       {
         method: 'DELETE',
         headers:{
