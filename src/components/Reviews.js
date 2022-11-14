@@ -20,7 +20,7 @@ export default function Reviews() {
 	};
 
     return (
-        <div className="reviews">
+        <div className="reviews items-center">
             <br /><br />
             <h2>Our Customers Say...</h2>
             {reviews.map((review) => (

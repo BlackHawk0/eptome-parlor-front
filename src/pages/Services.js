@@ -8,7 +8,7 @@ import '../index.css'
 
 const Services = () => {
   return (
-    <div className='services-page'>
+    <div className='services-page items-center'>
         {/* <Navbar /> */}
         <div>
         <h1 className='heading'>BEAUTY AND SPA CENTER</h1>
