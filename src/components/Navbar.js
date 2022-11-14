@@ -16,7 +16,8 @@ import Grid from '@mui/material/Grid';
 import { NavLink } from "react-router-dom";
 const drawerWidth = 240;
 
-const navItems = [<NavLink to="/">Home</NavLink>, <NavLink to="/about">About</NavLink>, <NavLink to="/services">Services</NavLink>, <NavLink to="/contactpage">Contact Us</NavLink>];
+const navItems = [<NavLink to="/">Home</NavLink>, <NavLink to="/about">About</NavLink>, <NavLink to="/services">Services</NavLink>, 
+<NavLink to="/contactpage">Contact Us</NavLink>, <NavLink to="/login">Login</NavLink>];
 
 
 export default function DrawerAppBar(props) {

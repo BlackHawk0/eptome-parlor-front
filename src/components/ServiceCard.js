@@ -25,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TitlebarImageList() {
   const [serviceTypes, setServiceType] = useState([]);
-
   const serviceTypeAPI = "https://eptome-parlor.herokuapp.com/service_types";
   
   useEffect(() => {
