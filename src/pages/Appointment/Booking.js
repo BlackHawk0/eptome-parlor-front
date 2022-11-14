@@ -5,7 +5,7 @@ import Bookings from './Bookings';
 const Booking = () => {
     const [bookings, setBookings] = useState([])
     useEffect(()=>{
-        fetch('hhttps://eptome-parlor.herokuapp.com/bookings')
+        fetch('https://eptome-parlor.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => setBookings(data))
     }, [])
