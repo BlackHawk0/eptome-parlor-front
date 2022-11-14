@@ -73,7 +73,7 @@
     justify-content: center;
     align-items: top;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #c2c2c2;
     padding-top: 1vw;
     margin-left: 10%;
     margin-right: 10%;
@@ -88,7 +88,7 @@ img{
 }
 .main-form{
     padding: 2vw;
-    background-color: white;
+    background-color: #ececec;
 }
 .input-style{
     border-width: 0.1vw;
@@ -99,8 +99,9 @@ img{
     border-left: none;
     border-right: none;
     padding: 1vw;
+    background-color:  #ececec;
 }
-label{
+.main-form label{
     font-size: 1.2vw;
 }
 .contact-container h1{
