@@ -41,13 +41,14 @@ export default function AddReviewForm ({handleNewReview}) {
                 </div>
                 <div className="form">
                   <br /> <br />
-                    <h3>Satisfied with our service?</h3>
+                    <h3 className="text-sky-500 text-2xl">Satisfied with our service?</h3>
+                    <br />
                     <form onSubmit={handleSaveReview} className="comment-form">
                     Name: <br/><input value={formData.name} onChange={handleChange} type="text" name="name" placeholder="Your name?" className="client-name" required /> <br/> <br/>
                     Email: <br/><input value={formData.email} onChange={handleChange} type="email" name="email" placeholder="Your email won't be published" className="email-input" required /> <br/><br/>
                     Comment: <br/>
                     <textarea value={formData.body} onChange={handleChange} name="body" className="client-text" cols="30" rows="6" placeholder="Leave a review..." required></textarea><br/><br/>
-                    <button type="submit" className="buttn">Submit Review</button>
+                    <button type="submit" className="h-10 px-6 font-semibold rounded-md text-white bg-sky-500 hover:bg-sky-700">Submit Review</button>
                     </form>
                 </div>
             </div>    

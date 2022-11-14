@@ -39,3 +39,25 @@ background: #F3F0EB;
     color: #555555;
 }
 
+
+.about-h {
+    width: 90%;
+    margin-bottom: 3%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 23px;
+    color: #B58152;
+}
+.about-p {
+    width: 90%;
+    margin-bottom: 10%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #555555;
+}

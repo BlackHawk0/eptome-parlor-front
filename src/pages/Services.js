@@ -3,12 +3,13 @@ import '../components/Services.css';
 import ServiceCard from '../components/ServiceCard'
 // import Navbar from './../components/Navbar'
 // import ReviewForm from '../components/ReviewForm'
+import Testimonials from '../components/Testimonials';
 import Reviews from '../components/Reviews'
 import '../index.css'
 
 const Services = () => {
   return (
-    <div className='services-page'>
+    <div className='services-page items-center'>
         {/* <Navbar /> */}
         <div>
         <h1 className='heading'>BEAUTY AND SPA CENTER</h1>
@@ -24,6 +25,7 @@ const Services = () => {
             <img src="https://img.freepik.com/free-photo/spa-treatment-dark-wall_176420-8983.jpg?size=626&ext=jpg&ga=GA1.2.790298598.1667807727&semt=sph" alt="massage-oils" />
         </div>
     </div>
+    <Testimonials />
     <div className='reviews-div'>
         {/* <ReviewForm /> */}
         <Reviews />

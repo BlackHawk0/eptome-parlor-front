@@ -9,6 +9,7 @@ import AppointmentForm from "./components/AppointmentForm";
 import Login from "./pages/Login/Login";
 import Booking from "./pages/Appointment/Booking";
 
+
 function App() {
   return (
     <div className="App">
