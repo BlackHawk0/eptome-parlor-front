@@ -23,7 +23,7 @@ export default function AppointmentForm() {
     customer_email: Yup.string()
       .email("Email must be a valid email address")
       .required("Email is required"),
-    service_id: Yup.string().required("Service is required"),
+    booked_service: Yup.string().required("Service is required"),
     booked_date: Yup.string()
       .matches(dateRegex, "Date must be in DD/MM/YYYY format")
       .required("Appointment date is required"),
@@ -35,10 +35,9 @@ export default function AppointmentForm() {
       customer_name: "",
       customer_phonenumber: "",
       customer_email: "",
-      service_id: "",
+      booked_service: "",
       booked_date: "",
-      created_at: "",
-      updated_at: "",
+
     },
     validationSchema: BookAppointmentSchema,
     onSubmit: (values, { resetForm }) => {
@@ -46,7 +45,7 @@ export default function AppointmentForm() {
       console.log("in here: ", values);
       const postData = async () => {
         // await fetch("https://eptome-parlor-beauty.herokuapp.com/bookings/new", {
-        await fetch("https://eptome-parlor-beauty.herokuapp.com/bookings/new", {
+        await fetch("http://localhost:9292/bookings/new", {
           method: "POST",
           body: JSON.stringify({
               customer_name: values.customer_name,
@@ -104,18 +103,18 @@ export default function AppointmentForm() {
                 error={Boolean(touched.customer_email && errors.customer_email)}
                 helperText={touched.customer_email && errors.customer_email}
               />
-            </Grid>
-            <Grid item xs={4}>
               <TextField
                 fullWidth
-                autoComplete="service_id"
+                autoComplete="booked_service"
                 type="text"
                 margin="normal"
                 label="Service"
-                {...getFieldProps("service_id")}
-                error={Boolean(touched.service_id && errors.service_id)}
-                helperText={touched.service_id && errors.service_id}
+                {...getFieldProps("booked_service")}
+                error={Boolean(touched.booked_service && errors.booked_service)}
+                helperText={touched.booked_service && errors.booked_service}
               />
+            </Grid>
+            <Grid item xs={4}>
               <TextField
                 fullWidth
                 autoComplete="booked_date"
