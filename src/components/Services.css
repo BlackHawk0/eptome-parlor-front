@@ -17,7 +17,7 @@ letter-spacing: 0.05em;
 color: #B58152;
 }
 .services-page{
-    margin-left: 9%;
+    margin-left: 4%;
 }
 .service-p {
 width: 90%;
@@ -55,7 +55,7 @@ color: #555555;
 .offers-heading{
 width: 90%;
 height: 208.01px;
-left: 132px;
+/* left: 132px; */
 top: 100px;
 font-family: 'Old Standard TT';
 font-style: normal;
