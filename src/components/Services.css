@@ -98,14 +98,20 @@ top: 2744px;
 .top-service {
     width: 20%;
     margin: 0 auto;
+    background-color: whitesmoke;
+}
+.top-service:hover{
+    box-shadow: 0.2vw 0.2vw 0.2em black;
 }
 
 .top-service img {
-    width: 100%; 
-    
+    width: 90%; 
+    padding: 5%    
 }
 
 .top-service h3 {
+    margin-top: 1vh;
+    font-weight: 700;
     text-align: center;
 }
 
