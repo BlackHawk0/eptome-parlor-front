@@ -2,6 +2,7 @@ import React from 'react'
 import './contact.css'
 import '../index.css'
 
+
 function Contact() {
     return (
         <div className="contact-container">
@@ -24,6 +25,7 @@ function Contact() {
             rel="noopener noreferrer">
             <i class="fa fa-whatsapp whatsapp-icon"></i>
             </a>
+
         </div>
     )
 }
